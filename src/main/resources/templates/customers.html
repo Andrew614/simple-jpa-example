@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>customers</title>
+</head>
+
+<body>
+    <h1>Our Customers</h1>
+
+    <div th:each="customer: ${customers}">
+        <p th:text="${customer.firstName} + ' ' + ${customer.lastName}"></p>
+    </div>
+
+</body>
+
+</html>
